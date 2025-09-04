@@ -437,7 +437,7 @@ services:
         mailcow-network:
           aliases:
             - nginx
-        proxy:
+        dokploy-network:
            
             
     acme-mailcow:
