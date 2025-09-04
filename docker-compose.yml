@@ -438,7 +438,7 @@ services:
           aliases:
             - nginx
         proxy:
-            external: true
+           
             
     acme-mailcow:
       depends_on:
@@ -675,9 +675,6 @@ networks:
       config:
         - subnet: ${IPV4_NETWORK:-172.22.1}.0/24
         - subnet: ${IPV6_NETWORK:-fd4d:6169:6c63:6f77::/64}
-
-  proxy:
-    external: true
 
 volumes:
   vmail-vol-1:
